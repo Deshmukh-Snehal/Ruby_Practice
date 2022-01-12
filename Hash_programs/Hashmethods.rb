@@ -1,0 +1,10 @@
+student={1=>"Rachel",2=>"Ross",3=>"Monica",4=>"Joey",5=>"Chandler"}
+puts "Keys method:-#{student.keys}\n"
+puts "Value method:-#{student.values}"
+puts "Length method:-#{student.length}"
+puts "Size method:-#{student.size}"
+puts "Empty method:-#{student.empty?()}"
+puts "Delete method:-#{student.delete(2)}"
+puts ".has_key?(key) or .key?(key)  method:-#{student.key?(9)}"
+puts ".has_value?(value) or .value?(value)  method:-#{student.value?("Rachel")}"
+puts "Clear method:-#{student.clear}"
