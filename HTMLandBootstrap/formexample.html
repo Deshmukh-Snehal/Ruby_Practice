@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> -->
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <form>
+            <fieldset style="width: auto;">
+                <legend><h1>Registration Form</h1></legend>
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="fname"><br>
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lname"><br>
+                <label for="g">Please select gender</label>
+                <input type="radio" id="m" name="m" value="Male">
+                <label for="male">Male</label>
+                <input type="radio" id="f" name="m" value="Female">
+                <label for="female">Female</label><br>
+                <label for="b1">Select Languages</label><br>
+                <input type="checkbox" id="ch1" name="ch1">
+                <label for="ch1">C</label><br>
+                <input type="checkbox" id="ch2" name="ch2">
+                <label for="ch2">C++</label><br>
+                <input type="checkbox" id="ch3" name="ch3">
+                <label for="ch3">Java</label><br>
+                <input type="checkbox" id="ch4" name="ch4">
+                <label for="ch4">JavaScript</label><br>
+                <input type="checkbox" id="ch5" name="ch5">
+                <label for="ch5">Ruby</label><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email"><br>
+                <label for="birthday">Birthday:</label>
+                <input type="date" id="birthday" name="birthday"><br>
+                <label for="cars">Choose a Vehicle:</label>
+                <select name="vehicle" id="vehicle">
+                  <option value="car">Car</option>
+                  <option value="bike">Bike</option>
+                  <option value="bus">Bus</option>
+                  <option value="auto">Auto</option>
+                </select><br><br>
+                <input type="search"><br>
+                <audio controls>
+                  <source src="/home/dell/HTML/jungle-rain-and-birds.wav" type="audio/mpeg">
+                </audio><br><br>
+                <video width="320" height="240" controls>
+                  <source src="/home/dell/HTML/butterfly_flower.mp4" type="video/mp4">
+                  <source src="/home/dell/HTML/butterfly_flower.ogg" type="video/ogg">
+                </video> <br>
+                <button type="button" onclick="alert('Hello word!')">Click Me!</button> 
+                <button type="submit" formaction="/home/dell/HTML">submit</button>
+            </fieldset>
+        </form>
+    </body>
+</html>
