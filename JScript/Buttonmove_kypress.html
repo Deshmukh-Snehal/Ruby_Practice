@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button click event</title>
+    <style>
+        .b1 {
+            width: 44px;
+            height: 18px;
+            padding: 14px;
+            position: relative;
+            margin: 200px auto 0;
+            background: rgb(104, 96, 162);
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1></h1>
+    <div class="b1">Move</div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script>
+        $(document).keydown(function(m) {
+            switch (m.which) {
+                case 37:
+                    $(".b1").finish().animate({
+                        left: "-=30"
+
+                    });
+                    break;
+                case 38:
+                    $(".b1").finish().animate({
+                        top: "-=30"
+                    });
+                    break;
+                case 39:
+                    $(".b1").finish().animate({
+                        left: "+=30"
+                    });
+                    break;
+                case 40:
+                    $(".b1").finish().animate({
+                        top: "+=30"
+                    });
+                    break;
+            }
+        });
+        let a = window;
+        var iwidth = innerWidth;
+        var iheight = innerHeight;
+        if (m((innerWidth == outerWidth) && (innerHeight == outerHeight))) {
+            window.alert('This is maximum');
+        }
+        console.log(a);
+    </script>
+
+</body>
+
+</html>
