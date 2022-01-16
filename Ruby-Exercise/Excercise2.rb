@@ -189,15 +189,15 @@ class Excercise
                 puts integer_checking(7, 14)
                 puts integer_checking(6, 9)
                 puts integer_checking(5, 5)
-             when 39
+            when 39
                 puts string_test("Insist")
-             when 40
+        when 40
                 puts string_ch('abcdefgij')
                 puts string_ch('abcdefg')
 
-         else
+        else
             puts "Invalid value"
-         end
+        end
      end
  end
  e = Excercise.new

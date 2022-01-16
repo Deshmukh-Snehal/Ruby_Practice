@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -8,57 +8,50 @@
     <title>Button click event</title>
     <style>
         .b1 {
-            width: 44px;
-            height: 18px;
-            padding: 14px;
-            position: relative;
-            margin: 200px auto 0;
+            width: 100px;
+            height: 100px;
             background: rgb(104, 96, 162);
         }
     </style>
 </head>
 
 <body>
-
-    <h1></h1>
-    <div class="b1">Move</div>
-
-    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-    <script>
-        $(document).keydown(function(m) {
-            switch (m.which) {
-                case 37:
-                    $(".b1").finish().animate({
-                        left: "-=30"
-
-                    });
-                    break;
-                case 38:
-                    $(".b1").finish().animate({
-                        top: "-=30"
-                    });
-                    break;
-                case 39:
-                    $(".b1").finish().animate({
-                        left: "+=30"
-                    });
-                    break;
-                case 40:
-                    $(".b1").finish().animate({
-                        top: "+=30"
-                    });
-                    break;
-            }
-        });
-        let a = window;
-        var iwidth = innerWidth;
-        var iheight = innerHeight;
-        if (m((innerWidth == outerWidth) && (innerHeight == outerHeight))) {
-            window.alert('This is maximum');
-        }
-        console.log(a);
-    </script>
-
+    <div class="b1"></div>
 </body>
+<script>
+    let box = document.querySelector('.b1');
+    let moveBy = 10;
+
+    window.addEventListener('load', () => {
+        box.style.position = 'absolute';
+        box.style.left = 0;
+        box.style.top = 0;
+    });
+    // let currentwidth = document.body.left;
+    // let innerwidth = window.innerWidth;
+    // let currenthight = document.body.top;
+    // let innerheight = window.innerHeight;
+    window.addEventListener('keyup', (e) => {
+        switch (e.key) {
+            case 'ArrowLeft':
+                box.style.left = parseInt(box.style.left) - moveBy + 'px';
+                break;
+            case 'ArrowRight':
+                box.style.left = parseInt(box.style.left) + moveBy + 'px';
+                break;
+            case 'ArrowUp':
+                box.style.top = parseInt(box.style.top) - moveBy + 'px';
+                break;
+            case 'ArrowDown':
+                box.style.top = parseInt(box.style.top) + moveBy + 'px';
+                break;
+        }
+    });
+    // if (currentwidth <= innerwidth && currentheight <= innerheight) {
+
+    // } else {
+    //     alert('This is Maximum')
+    // }
+</script>
 
 </html>
